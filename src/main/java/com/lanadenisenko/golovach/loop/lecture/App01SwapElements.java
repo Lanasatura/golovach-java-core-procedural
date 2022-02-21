@@ -5,9 +5,9 @@ import java.util.Arrays;
 /**
  * Created by Satura on 19.10.2018.
  */
-public class App01Swipe {
+public class App01SwapElements {
     public static void main(String[] args) {
-        int[] array = {20, 10, 30, 40, 50};
+        int[] array = {20, 40, 10, 50, 40, 50, 14};
 
         for (int counter = 0; counter < array.length - 1; counter++) {
             if (currentElementIsMoreThanNext(array, counter)) {
@@ -19,9 +19,9 @@ public class App01Swipe {
     }
 
     private static void swapTwoElementsOfArray(int[] array, int firstElement, int secondElement) {
-        int tmpElement = array[firstElement];
+        int tempElement = array[firstElement];
         array[firstElement] = array[secondElement];
-        array[secondElement] = tmpElement;
+        array[secondElement] = tempElement;
     }
 
     private static boolean currentElementIsMoreThanNext(int[] array, int counter) {

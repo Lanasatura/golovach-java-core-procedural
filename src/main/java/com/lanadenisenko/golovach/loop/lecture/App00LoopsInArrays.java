@@ -3,7 +3,7 @@ package com.lanadenisenko.golovach.loop.lecture;
 /**
  * Created by Satura on 19.10.2018.
  */
-public class App00 {
+public class App00LoopsInArrays {
     public static void main(String[] args) {
         printIntNumbersFromZeroToTen();
 

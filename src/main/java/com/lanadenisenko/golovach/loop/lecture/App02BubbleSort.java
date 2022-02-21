@@ -7,29 +7,29 @@ import java.util.Arrays;
  */
 public class App02BubbleSort {
     public static void main(String[] args) {
-        int[] data = {40, 10, 50, 30, 20};
+        int[] numbers = {40, 10, 50, 30, 20};
 
-        for (int barrier = data.length - 1; barrier >= 1; barrier--) {
+        for (int barrier = numbers.length - 1; barrier >= 1; barrier--) {
             for (int index = 0; index < barrier; index++) {
-                conditionalSwap(data, index);
+                conditionalSwap(numbers, index);
 
                 System.out.print(index);
             }
             System.out.println();
-            System.out.println(Arrays.toString(data));
+            System.out.println(Arrays.toString(numbers));
         }
-        System.out.println(Arrays.toString(data));
+        System.out.println(Arrays.toString(numbers));
     }
 
     private static void conditionalSwap(int[] data, int index) {
         if (data[index] > data[index + 1]) {
-            swap(data, index, index + 1);
+            swapTwoElementsOfArray(data, index, index + 1);
         }
     }
 
-    private static void swap(int[] data, int firstElement, int secondElement) {
-        int tmpElement = data[firstElement];
-        data[firstElement] = data[secondElement];
-        data[secondElement] = tmpElement;
+    private static void swapTwoElementsOfArray(int[] numbers, int firstElement, int secondElement) {
+        int tempElement = numbers[firstElement];
+        numbers[firstElement] = numbers[secondElement];
+        numbers[secondElement] = tempElement;
     }
 }
